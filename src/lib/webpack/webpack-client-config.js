@@ -172,13 +172,11 @@ function isDev(config) {
 
 	return {
 		plugins: [
-			new webpack.NamedModulesPlugin(),
-			new webpack.HotModuleReplacementPlugin()
 		],
 
 		devServer: {
 			inline: true,
-			hot:true,
+			hot:false,
 			compress: true,
 			publicPath: '/',
 			contentBase: src,
